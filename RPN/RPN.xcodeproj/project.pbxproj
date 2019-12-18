@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		DD689AC123AAEB0200590E71 /* RPN.h in Headers */ = {isa = PBXBuildFile; fileRef = DD689ABF23AAEB0200590E71 /* RPN.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD689AEF23AAEEC300590E71 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD689AEE23AAEEC300590E71 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD689ABC23AAEB0200590E71 /* RPN.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RPN.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD689ABF23AAEB0200590E71 /* RPN.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPN.h; sourceTree = "<group>"; };
 		DD689AC023AAEB0200590E71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD689AEE23AAEEC300590E71 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				DD689ABF23AAEB0200590E71 /* RPN.h */,
 				DD689AC023AAEB0200590E71 /* Info.plist */,
+				DD689AEE23AAEEC300590E71 /* Stack.swift */,
 			);
 			path = RPN;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					DD689ABB23AAEB0200590E71 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD689AEF23AAEEC300590E71 /* Stack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		DD689AC523AAEB0200590E71 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = T87Y8KB3R4;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.percyNgan.RPN;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		DD689AC623AAEB0200590E71 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = T87Y8KB3R4;
